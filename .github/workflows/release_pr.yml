@@ -26,6 +26,7 @@ jobs:
         id: bump
         with:
           current_version: ${{ env.CURRENT_VERSION }}
+      - run: npm install
       - name: Push
         shell: bash
         run: |
